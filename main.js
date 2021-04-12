@@ -26,10 +26,14 @@ const createCalcString = val => {
 
 //Converts the string into an array of numbers and operators
 const convertCalcString = str => {
-    let calcArr = [];
+    let numArr = [];
+    
+    let numAcc;
 
     for (let i = 0; i < str.length; i++) {
-        if (str[i])
+        if (typeof str[i] === 'number' || str[i] === '.') {
+            numAcc += str[i]
+        }
     }
 
     return calcArr;
