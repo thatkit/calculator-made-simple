@@ -106,4 +106,5 @@ main {
 button {
     background-color: blanchedalmond;
     border: 1px solid black;
+    padding: 0;
 }
