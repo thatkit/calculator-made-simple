@@ -18,7 +18,19 @@ const mns = '-';
 const mlt = '*';
 const dvd = '/';
 
-const createCalcString = button => {
-    calcString += button;
+//Creates a string with calculation operations
+const createCalcString = val => {
+    calcString += val;
     return calcString;
+}
+
+//Converts the string into an array of numbers and operators
+const convertCalcString = str => {
+    let calcArr = [];
+
+    for (let i = 0; i < str.length; i++) {
+        if (str[i])
+    }
+
+    return calcArr;
 }
