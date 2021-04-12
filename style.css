@@ -23,11 +23,20 @@ main {
 }
 
 #calc-field {
-    grid-area: 1 / 1 / 1 / 5;   
+    grid-area: 1 / 1 / 2 / 5;   
 }
 
 #equals {
-    grid-area: 6 / 1 / 6 / 5;
+    grid-area: 6 / 1 / 7 / 5;
+}
+
+#one {
+    grid-area: 4 / 1 / 5 / 2;
+    z-index: 2;
+}
+
+#two {
+    grid-area: ;
 }
 
 /* Buttons Styles */
