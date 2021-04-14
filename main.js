@@ -1,28 +1,45 @@
 let calcString = '';
 
 //Integers
-const num0 = 0;
-const num1 = 1;
-const num2 = 2;
-const num3 = 3;
-const num4 = 4;
-const num5 = 5;
-const num6 = 6;
-const num7 = 7;
-const num8 = 8;
-const num9 = 9;
+const zero = document.getElementById('zero');
+const one = document.getElementById('one');
+const two = document.getElementById('two');
+const three = document.getElementById('three');
+const four = document.getElementById('four');
+const five = document.getElementById('five');
+const six = document.getElementById('six');
+const seven = document.getElementById('seven');
+const eight = document.getElementById('eight');
+const nine = document.getElementById('nine');
 //Operators and a dot
-const dot = '.';
-const pls = '+';
-const mns = '-';
-const mlt = '*';
-const dvd = '/';
+const dot = document.getElementById('dot');
+const pls = document.getElementById('addition');
+const mns = document.getElementById('subtraction');
+const mlt = document.getElementById('multiplication');
+const dvd = document.getElementById('division');
 
 //Creates a string with calculation operations
 const createCalcString = val => {
     calcString += val;
     return calcString;
 }
+
+//Event handlers
+zero.onclick = createCalcString(0);
+one.onclick = createCalcString(1);
+two.onclick = createCalcString(2);
+three.onclick = createCalcString(3);
+four.onclick = createCalcString(4);
+five.onclick = createCalcString(5);
+six.onclick = createCalcString(6);
+seven.onclick = createCalcString(7);
+eight.onclick = createCalcString(8);
+nine.onclick = createCalcString(9);
+dot.onclick = createCalcString('.');
+pls.onclick = createCalcString('+');
+mns.onclick = createCalcString('-');
+mlt.onclick = createCalcString('*');
+dvd.onclick = createCalcString('/');
 
 //Converts the string into an array of numbers and operators
 const convertCalcString = str => {
