@@ -45,4 +45,32 @@ const convertCalcString = str => {
     return calcArr;
 }
 
-console.log(convertCalcString('20+52'));
+//Converts string array items to number items
+const toNumber = arr => {
+    arr[0] = Number(arr[0]);
+    arr[1] = Number(arr[1]);
+}
+
+//Runs simple calculation
+const runCalc = arr => {
+    let rslt;
+
+    switch (arr[2]) {
+        case '+':
+            rslt = arr[0] + arr[1];
+            break;
+        case '-':
+            rslt = arr[0] - arr[1];
+            break;
+        case '*':
+            rslt = arr[0] * arr[1];
+            break;
+        case '/':
+            rslt = arr[0] / arr[1];
+            break;
+        default:
+            console.log('something\'s wrong with "runCalc" func!')
+    }
+
+    return rslt;
+}
