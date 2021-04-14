@@ -1,6 +1,5 @@
 let calcString = '';
 
-//Integers
 const zero = document.getElementById('zero');
 const one = document.getElementById('one');
 const two = document.getElementById('two');
@@ -11,7 +10,6 @@ const six = document.getElementById('six');
 const seven = document.getElementById('seven');
 const eight = document.getElementById('eight');
 const nine = document.getElementById('nine');
-//Operators and a dot
 const dot = document.getElementById('dot');
 const pls = document.getElementById('addition');
 const mns = document.getElementById('subtraction');
@@ -21,7 +19,6 @@ const dvd = document.getElementById('division');
 //Creates a string with calculation operations
 const createCalcString = val => {
     calcString += val;
-    return calcString;
 }
 
 //Event handlers
