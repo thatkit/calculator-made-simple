@@ -26,15 +26,23 @@ const createCalcString = val => {
 
 //Converts the string into an array of numbers and operators
 const convertCalcString = str => {
-    let numArr = [];
-    
-    let numAcc;
+    let calcArr = [];
 
-    for (let i = 0; i < str.length; i++) {
-        if (typeof str[i] === 'number' || str[i] === '.') {
-            numAcc += str[i]
-        }
+    if (str.includes('+')) {
+        calcArr = str.split('+');
+        calcArr.push('+');
+    } else if (str.includes('-')) {
+        calcArr = str.split('-');
+        calcArr.push('-');
+    } else if (str.includes('*')) {
+        calcArr = str.split('*');
+        calcArr.push('*');
+    } else if (str.includes('/')) {
+        calcArr = str.split('/');
+        calcArr.push('/');
     }
 
     return calcArr;
 }
+
+console.log(convertCalcString('20+52'));
