@@ -19,24 +19,55 @@ const dvd = document.getElementById('division');
 //Creates a string with calculation operations
 const createCalcString = val => {
     calcString += val;
+    return calcString;
 }
 
 //Event handlers
-zero.onclick = createCalcString(0);
-one.onclick = createCalcString(1);
-two.onclick = createCalcString(2);
-three.onclick = createCalcString(3);
-four.onclick = createCalcString(4);
-five.onclick = createCalcString(5);
-six.onclick = createCalcString(6);
-seven.onclick = createCalcString(7);
-eight.onclick = createCalcString(8);
-nine.onclick = createCalcString(9);
-dot.onclick = createCalcString('.');
-pls.onclick = createCalcString('+');
-mns.onclick = createCalcString('-');
-mlt.onclick = createCalcString('*');
-dvd.onclick = createCalcString('/');
+zero.onclick = () => {
+    calcString += '0';
+};
+one.onclick = () => {
+    calcString += '1';
+};
+two.onclick = () => {
+    calcString += '2';
+};
+three.onclick = () => {
+    calcString += '3';
+};
+four.onclick = () => {
+    calcString += '4';
+};
+five.onclick = () => {
+    calcString += '5';
+};
+six.onclick = () => {
+    calcString += '6';
+};
+seven.onclick = () => {
+    calcString += '7';
+};
+eight.onclick = () => {
+    calcString += '8';
+};
+nine.onclick = () => {
+    calcString += '9';
+};
+dot.onclick = () => {
+    calcString += '.';
+};
+pls.onclick = () => {
+    calcString += '+';
+};
+mns.onclick = () => {
+    calcString += '-';
+};
+mlt.onclick = () => {
+    calcString += '*';
+};
+dvd.onclick = () => {
+    calcString += '/';
+};
 
 //Converts the string into an array of numbers and operators
 const convertCalcString = str => {
