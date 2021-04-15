@@ -18,6 +18,7 @@ const mlt = document.getElementById('multiplication');
 const dvd = document.getElementById('division');
 const dlt = document.getElementById('delete');
 const eql = document.getElementById('equals');
+const calcField = document.getElementById('calc-field');
 
 //Creates a string with calculation operations
 const createCalcString = val => {
@@ -108,6 +109,7 @@ eql.onclick = () => {
     calc = toNumber(calc);
     calc = runCalc(calc);
     clearCalcString();
+    calcField.innerHTML = `${calc}`;
     return calc;
 }
 
