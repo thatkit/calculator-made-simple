@@ -98,7 +98,7 @@ main {
 
 #calc-field {
     width: 100%;
-    height: 100%;
+    height: 6rem;
     background-color: blanchedalmond;
     border: 1px solid black;
 }
@@ -106,5 +106,18 @@ main {
 button {
     background-color: blanchedalmond;
     border: 1px solid black;
+    height: 6rem;
     padding: 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #addition, #subtraction, #multiplication, #division, #dot, #delete {
+    
+}
+
+#equals {
+    width: 100%;
 }
