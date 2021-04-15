@@ -1,5 +1,6 @@
 let calcString = '';
 
+//Assigning HTML buttons to variables
 const zero = document.getElementById('zero');
 const one = document.getElementById('one');
 const two = document.getElementById('two');
@@ -15,6 +16,8 @@ const pls = document.getElementById('addition');
 const mns = document.getElementById('subtraction');
 const mlt = document.getElementById('multiplication');
 const dvd = document.getElementById('division');
+const dlt = document.getElementById('delete');
+const eql = document.getElementById('equals');
 
 //Creates a string with calculation operations
 const createCalcString = val => {
@@ -22,52 +25,28 @@ const createCalcString = val => {
     return calcString;
 }
 
-//Event handlers
-zero.onclick = () => {
-    calcString += '0';
-};
-one.onclick = () => {
-    calcString += '1';
-};
-two.onclick = () => {
-    calcString += '2';
-};
-three.onclick = () => {
-    calcString += '3';
-};
-four.onclick = () => {
-    calcString += '4';
-};
-five.onclick = () => {
-    calcString += '5';
-};
-six.onclick = () => {
-    calcString += '6';
-};
-seven.onclick = () => {
-    calcString += '7';
-};
-eight.onclick = () => {
-    calcString += '8';
-};
-nine.onclick = () => {
-    calcString += '9';
-};
-dot.onclick = () => {
-    calcString += '.';
-};
-pls.onclick = () => {
-    calcString += '+';
-};
-mns.onclick = () => {
-    calcString += '-';
-};
-mlt.onclick = () => {
-    calcString += '*';
-};
-dvd.onclick = () => {
-    calcString += '/';
-};
+//Event handlers - integer buttons
+zero.onclick = () => calcString += '0';
+one.onclick = () => calcString += '1';
+two.onclick = () => calcString += '2';
+three.onclick = () => calcString += '3';
+four.onclick = () => calcString += '4';
+five.onclick = () => calcString += '5';
+six.onclick = () => calcString += '6';
+seven.onclick = () => calcString += '7';
+eight.onclick = () => calcString += '8';
+nine.onclick = () => calcString += '9';
+dot.onclick = () => calcString += '.';
+pls.onclick = () => calcString += '+';
+mns.onclick = () => calcString += '-';
+mlt.onclick = () => calcString += '*';
+dvd.onclick = () => calcString += '/';
+
+//Clears calcString
+const clearCalcString = () => calcString = '';
+
+//Event handler - delete button
+dlt.onclick = () => clearCalcString();
 
 //Converts the string into an array of numbers and operators
 const convertCalcString = str => {
@@ -92,8 +71,10 @@ const convertCalcString = str => {
 
 //Converts string array items to number items
 const toNumber = arr => {
-    arr[0] = Number(arr[0]);
-    arr[1] = Number(arr[1]);
+    let arrToNum = arr;
+    arrToNum[0] = Number(arrToNum[0]);
+    arrToNum[1] = Number(arrToNum[1]);
+    return arrToNum;
 }
 
 //Runs simple calculation
@@ -119,3 +100,15 @@ const runCalc = arr => {
 
     return rslt;
 }
+
+//Event handler - equals
+let calc;
+eql.onclick = () => {
+    calc = convertCalcString(calcString);
+    calc = toNumber(calc);
+    calc = runCalc(calc);
+    clearCalcString();
+    return calc;
+}
+
+//UI - numbers appearing on the screen
