@@ -102,6 +102,9 @@ const runCalc = arr => {
     return rslt;
 }
 
+//Even handler - numbers appearing on the screen
+document.onclick = () => calcField.innerHTML = `${calcString}`;
+
 //Event handler - equals
 let calc;
 eql.onclick = () => {
@@ -109,8 +112,6 @@ eql.onclick = () => {
     calc = toNumber(calc);
     calc = runCalc(calc);
     clearCalcString();
-    calcField.innerHTML = `${calc}`;
-    return calc;
+    calcString = calc;
+    return calcString;
 }
-
-//UI - numbers appearing on the screen
