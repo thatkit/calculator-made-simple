@@ -16,7 +16,7 @@ body {
 /* Layout */
 
 main {
-    width: 45vw;
+    width: 44vw;
     height: 65vh;
     display: grid;
     grid-template: repeat(1fr, 6) / repeat(1fr, 5);
@@ -107,6 +107,7 @@ button {
     background-color: blanchedalmond;
     border: 1px solid black;
     height: 6rem;
+    width: 11vw;
     padding: 0;
     font-size: 2rem;
     display: flex;
