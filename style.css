@@ -142,7 +142,7 @@ button {
 /* Transitions */
 
 button {
-    transition: all 700ms;
+    transition: all 500ms;
 }
 
 button:hover {
@@ -151,4 +151,8 @@ button:hover {
 
 button:focus {
     outline: none;
+}
+
+button:active {
+    background-color: #996806;
 }
