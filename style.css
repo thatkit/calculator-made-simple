@@ -11,13 +11,17 @@ html {
 body {
     font-size: 1rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #7F19A3;
-    background-color: #dfb9ed75;
+    color: #332302;
+    background-color: #FFAF0B;
     text-align: center;
     align-content: center;
 }
 
 /* Layout */
+
+header {
+    margin-bottom: 2rem;
+}
 
 main {
     width: 44vw;
@@ -100,7 +104,7 @@ main {
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 /* Buttons Styles */
@@ -108,15 +112,15 @@ footer {
 #calc-field {
     width: 100%;
     height: 6rem;
-    color: hsl(154, 19%, 35%);
-    background-color: #84f0c198;
-    border: 1px solid hsl(154, 19%, 35%);
+    color: #332302;
+    background-color: #337EFF;
+    border: 1px solid #332302;
 }
 
 button {
-    color: hsl(154, 19%, 35%);
-    background-color: #84f0c198;
-    border: 1px solid hsl(154, 19%, 35%);
+    color: #332302;
+    background-color: #337EFF;
+    border: 1px solid #332302;
     height: 6rem;
     width: 11vw;
     padding: 0;
@@ -124,6 +128,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 /*#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #addition, #subtraction, #multiplication, #division, #dot, #delete {
@@ -141,5 +146,9 @@ button {
 }
 
 button:hover {
-    background-color: #EBAF2D;
+    background-color: #FFAF0B;
+}
+
+button:focus {
+    outline: none;
 }
