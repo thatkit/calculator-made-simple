@@ -13,6 +13,8 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #7F19A3;
     background-color: #dfb9ed75;
+    text-align: center;
+    align-content: center;
 }
 
 /* Layout */
@@ -20,6 +22,7 @@ body {
 main {
     width: 44vw;
     height: 65vh;
+    margin: 0 auto;
     display: grid;
     grid-template: repeat(1fr, 6) / repeat(1fr, 5);
 }
@@ -139,8 +142,4 @@ button {
 
 button:hover {
     background-color: #EBAF2D;
-}
-
-button:active {
-    background-color: ;
 }
