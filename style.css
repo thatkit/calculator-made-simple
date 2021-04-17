@@ -115,6 +115,9 @@ footer {
     color: #332302;
     background-color: #337EFF;
     border: 1px solid #332302;
+    font-size: 2rem;
+    text-align: right;
+    padding: 0 auto;
 }
 
 button {
