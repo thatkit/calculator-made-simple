@@ -130,3 +130,17 @@ button {
 #equals {
     width: 100%;
 }
+
+/* Transitions */
+
+button {
+    transition: all 700ms;
+}
+
+button:hover {
+    background-color: #EBAF2D;
+}
+
+button:active {
+    background-color: ;
+}
