@@ -170,3 +170,11 @@ button:active {
 #calc-field:hover {
     background-color: #FFAF0B;
 }
+
+#delete:hover {
+    background-color: #FF5121;
+}
+
+#delete:active {
+    background-color: #8F2D13;
+}
