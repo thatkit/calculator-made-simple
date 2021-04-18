@@ -30,7 +30,7 @@ main {
     margin: 0 auto;
     display: grid;
     grid-template: repeat(1fr, 6) / repeat(1fr, 5);
-    gap: 3px;
+    gap: 12px;
 }
 
 #calc-field {
@@ -137,6 +137,7 @@ button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    box-shadow: 6px 6px 6px hsl(218, 100%, 81%), -6px -6px 6px hsl(218, 100%, 93%);
 }
 
 #equals {
@@ -153,6 +154,7 @@ button {
 
 button:hover {
     background-color: #FFAF0B;
+    box-shadow: none;
 }
 
 button:focus {
