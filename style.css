@@ -20,6 +20,7 @@ body {
 /* Layout */
 
 header {
+    margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
@@ -29,6 +30,7 @@ main {
     margin: 0 auto;
     display: grid;
     grid-template: repeat(1fr, 6) / repeat(1fr, 5);
+    gap: 3px;
 }
 
 #calc-field {
@@ -115,6 +117,7 @@ footer {
     color: #0A1933;
     background-color: #BFD7FF;
     border: none;
+    border-radius: 2rem;
     font-size: 2rem;
     text-align: right;
     padding: 0 auto;
@@ -124,8 +127,10 @@ button {
     color: #0A1933;
     background-color: #BFD7FF;
     border: none;
+    border-radius: 50%;
     height: 6rem;
     width: 11vw;
+    margin: 0;
     padding: 0;
     font-size: 2rem;
     display: flex;
@@ -134,12 +139,9 @@ button {
     cursor: pointer;
 }
 
-/*#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #addition, #subtraction, #multiplication, #division, #dot, #delete {
-    
-}*/
-
 #equals {
     width: 100%;
+    border-radius: 2rem;
 }
 
 /* Transitions */
@@ -158,4 +160,12 @@ button:focus {
 
 button:active {
     background-color: #996806;
+}
+
+#calc-field {
+    transition: background-color 500ms;
+}
+
+#calc-field:hover {
+    background-color: #FFAF0B;
 }
