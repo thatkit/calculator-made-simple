@@ -20,8 +20,8 @@ body {
 /* Layout */
 
 header {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 main {
@@ -113,14 +113,14 @@ footer {
 
 #calc-field {
     width: 100%;
-    height: 3rem;
+    height: 4rem;
     color: #0A1933;
     background-color: #BFD7FF;
     border: none;
     border-radius: 2rem;
     font-size: 2rem;
     text-align: right;
-    padding: 0 auto;
+    padding-right: 1rem;
 }
 
 button {
@@ -142,6 +142,7 @@ button {
 #equals {
     width: 100%;
     border-radius: 2rem;
+    height: 4rem;
 }
 
 /* Transitions */
