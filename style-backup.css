@@ -1,0 +1,161 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #332302;
+    background-color: #FFAF0B;
+    text-align: center;
+    align-content: center;
+}
+
+/* Layout */
+
+header {
+    margin-bottom: 2rem;
+}
+
+main {
+    width: 44vw;
+    height: 65vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(1fr, 6) / repeat(1fr, 5);
+}
+
+#calc-field {
+    grid-area: 1 / 1 / 2 / 5;   
+}
+
+#equals {
+    grid-area: 6 / 1 / 7 / 5;
+}
+
+#one {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+#two {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+#three {
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+#four {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#five {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#six {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+#seven {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#eight {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#nine {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#zero {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+#addition {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+#subtraction {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+#multiplication {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+#division {
+    grid-area: 5 / 4 / 6 / 5;
+}
+
+#dot {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+#delete {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+footer {
+    margin-top: 3rem;
+}
+
+/* Buttons Styles */
+
+#calc-field {
+    width: 100%;
+    height: 6rem;
+    color: #332302;
+    background-color: #337EFF;
+    border: 1px solid #332302;
+    font-size: 2rem;
+    text-align: right;
+    padding: 0 auto;
+}
+
+button {
+    color: #332302;
+    background-color: #337EFF;
+    border: 1px solid #332302;
+    height: 6rem;
+    width: 11vw;
+    padding: 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/*#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #addition, #subtraction, #multiplication, #division, #dot, #delete {
+    
+}*/
+
+#equals {
+    width: 100%;
+}
+
+/* Transitions */
+
+button {
+    transition: all 500ms;
+}
+
+button:hover {
+    background-color: #FFAF0B;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #996806;
+}
