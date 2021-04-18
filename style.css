@@ -120,7 +120,6 @@ footer {
     border-radius: 2rem;
     font-size: 2rem;
     text-align: right;
-    padding-right: 1rem;
     box-shadow: inset 6px 6px 6px hsl(218, 100%, 81%), inset -6px -6px 6px hsl(218, 100%, 93%);
 }
 
@@ -163,7 +162,8 @@ button:focus {
 }
 
 button:active {
-    background-color: #996806;
+    background-color: #FFAF0B;
+    box-shadow: inset 6px 6px 6px hsl(40, 100%, 42%), inset -6px -6px 6px hsl(40, 100%, 65%);
 }
 
 #calc-field {
@@ -180,5 +180,6 @@ button:active {
 }
 
 #delete:active {
-    background-color: #8F2D13;
+    background-color: #FF5121;
+    box-shadow: inset 6px 6px 6px hsl(13, 100%, 42%), inset -6px -6px 6px hsl(13, 100%, 65%);
 }
