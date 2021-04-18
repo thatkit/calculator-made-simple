@@ -167,11 +167,12 @@ button:active {
 }
 
 #calc-field {
-    transition: background-color 500ms;
+    transition: all 500ms;
 }
 
 #calc-field:hover {
     background-color: #FFAF0B;
+    box-shadow: none;
 }
 
 #delete:hover {
